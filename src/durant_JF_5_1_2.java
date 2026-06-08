@@ -4,13 +4,13 @@ import java.util.Scanner;
 public class durant_JF_5_1_2 {
         static void main(String args[]) {
             Scanner keyboard = new Scanner(System.in);
-            int choice;             //for user choice
-            int choice2;            //for use choice to exit or go again
-            double x, y;            //for user numbers
-            boolean validInput;     //for try/catch,  will loop as long as validInput is true
-            boolean validExit;      // for loop to run again
+            boolean validExit;      // for do/while loop to run again or exit
 
             do {
+                int choice;             //for user choice
+                int choice2;            //for use choice to exit or go again
+                double x, y;            //for user numbers
+                boolean validInput;     //for try/catch,  will loop as long as validInput is true
                 //simple do/while loop for user choice.  will crash if other data type is used
                 do {
                     System.out.println("Enter options 1 ");
