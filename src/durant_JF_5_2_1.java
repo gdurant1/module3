@@ -15,8 +15,8 @@ public class durant_JF_5_2_1 {
         System.out.println("5 = H\n" + "6 = O\n" + "7 = R\n");
 
         do {
-            for (int i = 1; i < 10; i++) {
-                System.out.println("Enter number " + i + ": ");
+            for (int i = 0; i < 10; i++) {
+                System.out.println("Enter number " + (i + 1) + ": ");
                 userInput = keyboard.nextInt();
                 if (userInput == 1) {
                     message[i] = 'D';}
@@ -39,9 +39,10 @@ public class durant_JF_5_2_1 {
 
             }
             System.out.println("Message: ");
-            for (int i = 0; i <= message.length; i++) {
-                System.out.println(message[i]);
+            for (int i = 0; i < message.length; i++) {
+                System.out.print(message[i] + " " );
             }
+            System.out.println();
 
             System.out.println("Enter 1 to go again.");
             System.out.println("Enter 2 to Exit program.");
