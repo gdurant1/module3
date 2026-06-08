@@ -13,7 +13,7 @@ public class durant_JF_5_1_2 {
                 boolean validInput;     //for try/catch,  will loop as long as validInput is true
                 //simple do/while loop for user choice.  will crash if other data type is used
                 do {
-                    System.out.println("Enter options 1 ");
+                    System.out.println("Enter options 1 to 5 ");
                     System.out.println("1. (+) Addition");
                     System.out.println("2. (-) Subtraction");
                     System.out.println("3. (x) Multiplication");
@@ -30,7 +30,7 @@ public class durant_JF_5_1_2 {
                         y = keyboard.nextDouble();
                         validInput = false;     //changing validInput to false will cause program to exit do/while loop.
                     } catch (InputMismatchException e) {
-                        System.out.println("Please enter numbers only.");
+                        System.out.println("Please enter only numbers.");
                         validInput = true; //setting validInput to true will keep user inside do/while loop
                     }
                 } while (validInput);
@@ -53,10 +53,10 @@ public class durant_JF_5_1_2 {
                 } while (choice2 < 1 || choice > 2);
 
                 if (choice2 == 1) {
-                    validExit = false;
+                    validExit = true;
                 }
                 else {
-                    validExit = true;
+                    validExit = false;
                 }
             } while (validExit);
         }
