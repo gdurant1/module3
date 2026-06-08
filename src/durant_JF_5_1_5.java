@@ -14,11 +14,8 @@ public class durant_JF_5_1_5 {
         System.out.println("How many lectures have you missed?");
         daysAbsent = keyboard.nextInt();
 
-        if(average >=90){
-            if(daysAbsent <3) exempt = true;
-        }
-        else if(average>=80){
-            if (daysAbsent <=0) exempt = true;
+        if(average >=90 && daysAbsent < 3 || average >=80 && daysAbsent <=0 ){
+            exempt = true;
         }
 
         if(exempt) System.out.println("Congratulations! You can miss the Final Exam");
