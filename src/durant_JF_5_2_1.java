@@ -3,19 +3,19 @@ import java.lang.String;
 public class durant_JF_5_2_1 {
     static void main(String[] args){
         Scanner keyboard = new Scanner(System.in);
-        int counter = 0; //for user input
-        int userInput;
-        int choice;
-        boolean validExit;
-        char message[] = new char[10];
+        int counter = 0; //counter for user input
+        int userInput; //to save user input
+        int choice; //for user choice
+        boolean validExit; //for user choice to exit program
+        char message[] = new char[10]; //array for user input
 
 
         System.out.println("Enter 10 numbers\n" + "Your choices are:");
         System.out.println("1 = D\n" + "2 = W\n" + "3 = E\n" + "4 = L");
         System.out.println("5 = H\n" + "6 = O\n" + "7 = R\n");
 
-        do {
-            for (int i = 0; i < 10; i++) {
+        do { // do/while loop runs while validExit=true
+            for (int i = 0; i < 10; i++) { //saves user input, and adds assigned letter to array
                 System.out.println("Enter number " + (i + 1) + ": ");
                 userInput = keyboard.nextInt();
                 if (userInput == 1) {
@@ -38,13 +38,13 @@ public class durant_JF_5_2_1 {
                 }
 
             }
-            System.out.println("Message: ");
+            System.out.println("Message: "); //prints the final message
             for (int i = 0; i < message.length; i++) {
                 System.out.print(message[i] + " " );
             }
             System.out.println();
 
-            System.out.println("Enter 1 to go again.");
+            System.out.println("Enter 1 to go again."); //prompts user for choice
             System.out.println("Enter 2 to Exit program.");
             choice = keyboard.nextInt();
 
