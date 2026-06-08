@@ -9,7 +9,7 @@ public class durant_JF_5_1_2 {
             do {
                 int choice;             //for user choice
                 int choice2;            //for use choice to exit or go again
-                double x, y;            //for user numbers
+                double x = 0, y = 0;            //for user numbers
                 boolean validInput;     //for try/catch,  will loop as long as validInput is true
                 //simple do/while loop for user choice.  will crash if other data type is used
                 do {
