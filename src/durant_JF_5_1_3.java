@@ -1,8 +1,8 @@
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import java.util.InputMismatchException;    //needed for try/catch
+import java.util.Scanner;                   //needed for scanner
 public class durant_JF_5_1_3 {
     static void main(String[] args){
-        Scanner keyboard = new Scanner(System.in);
+        Scanner reader = new Scanner(System.in);
         boolean validExit; // for do/while loop to run program again
         int choice;         //for user choice
         int choice2;        //for user exit choice
@@ -13,13 +13,13 @@ public class durant_JF_5_1_3 {
                 System.out.println("Enter planet number.");
                 System.out.println("1. Venus" + '\n' + "2. Mars");
                 System.out.println("3. Jupiter" + '\n' + "4. Saturn");
-                choice = keyboard.nextInt();
+                choice = reader.nextInt();
             } while (choice < 1 || choice > 4); //will crash with char/string
 
             do {
                 try {
                     System.out.println("Enter weight");
-                    weight = keyboard.nextDouble();
+                    weight = reader.nextDouble();
                     validInput = false;
                 } catch (InputMismatchException e) {
                     System.out.println("Please enter only numbers");
@@ -37,9 +37,11 @@ public class durant_JF_5_1_3 {
                 System.out.println("Your weight on Saturn is " + (weight * .92) + "pounds.");
             } //left else-if, can add planets later
 
-            System.out.println("Enter 1 to do again" + '\n' + "Enter 2 to Exit program" + '\n');
-            choice2 = keyboard.nextInt();
+            //user choice to run program again, or exit
+            System.out.println("Enter 1 to do again\n" + "Enter 2 to Exit program\n");
+            choice2 = reader.nextInt();
 
+            //changes validExit based on user choice
             if (choice2 == 1) {
                 validExit = true;}
             else {
