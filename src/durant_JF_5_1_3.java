@@ -28,22 +28,24 @@ public class durant_JF_5_1_3 {
             } while (validInput);
 
             if (choice == 1) {
-                System.out.println("Your weight on Venus is " + (weight * .1) + "pounds.");
-            } else if (choice == 2) {
-                System.out.println("Your weight on Mars is" + (weight * .38) + "pounds.");
-            } else if (choice == 3) {
-                System.out.println("Your weight on Jupiter is " + (weight * .1) + "pounds.");
-            } else if (choice == 4) {
-                System.out.println("Your weight on Saturn is " + (weight * .1) + "pounds.");
+                System.out.println("Your weight on Venus is " + (weight * .91) + "pounds."); }
+            else if (choice == 2) {
+                System.out.println("Your weight on Mars is" + (weight * .38) + "pounds.");}
+            else if (choice == 3) {
+                System.out.println("Your weight on Jupiter is " + (weight * 2.36) + "pounds.");}
+            else if (choice == 4) {
+                System.out.println("Your weight on Saturn is " + (weight * .92) + "pounds.");
             } //left else-if, can add planets later
 
             System.out.println("Enter 1 to do again" + '\n' + "Enter 2 to Exit program" + '\n');
             choice2 = keyboard.nextInt();
+
             if (choice2 == 1) {
-                validExit = true;
-            } else {
+                validExit = true;}
+            else {
                 validExit = false;
             }
+
         } while (validExit);
 
 

@@ -28,36 +28,35 @@ public class durant_JF_5_1_2 {
                         x = keyboard.nextDouble();
                         System.out.println("Enter second number.");
                         y = keyboard.nextDouble();
-                        validInput = false;     //changing validInput to false will cause program to exit do/while loop.
-                    } catch (InputMismatchException e) {
+                        validInput = false; }     //changing validInput to false will cause program to exit do/while loop.
+                    catch (InputMismatchException e) {
                         System.out.println("Please enter only numbers.");
                         validInput = true; //setting validInput to true will keep user inside do/while loop
-                    }
-                } while (validInput);
+                    } }
+                while (validInput);
 
                 if (choice == 1) {
-                    System.out.println(x + " + " + y + " = " + (x + y));
-                } else if (choice == 2) {
-                    System.out.println(x + " - " + y + " = " + (x - y));
-                } else if (choice == 3) {
-                    System.out.println(x + " x " + y + " = " + (x * y));
-                } else if (choice == 4) {
-                    System.out.println(x + " / " + y + " = " + (x / y));
-                } else {
+                    System.out.println(x + " + " + y + " = " + (x + y)); }
+                else if (choice == 2) {
+                    System.out.println(x + " - " + y + " = " + (x - y)); }
+                else if (choice == 3) {
+                    System.out.println(x + " x " + y + " = " + (x * y)); }
+                else if (choice == 4) {
+                    System.out.println(x + " / " + y + " = " + (x / y));}
+                else {
                     System.out.println("The Remainder of " + x + " / " + y + " is " + (x % y));
                 }
-                do {
-                    System.out.println("Enter 1 to go again.");
-                    System.out.println("Enter 2 to Exit program.");
-                    choice2 = keyboard.nextInt();
-                } while (choice2 < 1 || choice > 2);
+
+                System.out.println("Enter 1 to go again.");
+                System.out.println("Enter 2 to Exit program.");
+                choice2 = keyboard.nextInt();
 
                 if (choice2 == 1) {
-                    validExit = true;
-                }
+                    validExit = true;}
                 else {
                     validExit = false;
                 }
+
             } while (validExit);
         }
     }
